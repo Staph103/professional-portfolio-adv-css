@@ -1,0 +1,64 @@
+*{
+    padding: 0;
+    margin: 0;
+    position: relative;
+    
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+    width: 400%;
+    height: 100vh;
+}
+header{
+    background-color: rgb(36, 34, 34);
+    height: 100px;
+    position: relative;
+   
+    
+}
+header h1{
+    display: flex;
+    font-size: 38px;
+    padding-bottom: 50px;
+    color: white;
+    margin-left: 10px;
+    align-items: end;
+    
+}
+
+header nav li{
+    font-size: 25px;
+    display: inline;
+    line-height: 50px;
+    
+    
+    
+
+}
+header nav li a{
+    color:white;
+    text-decoration-thickness: 5px;
+    justify-content: space-around;
+    margin-left: 25px;
+    margin-right: 15px;
+
+    
+}
+
+
+.text-right{
+
+    text-align: right;
+}
+
+.profile-pic{
+
+    background-image: url("./social-media-marketing.jpg)";
+}
+h2{
+    justify-content: 
+}
+img{
+    
+}
