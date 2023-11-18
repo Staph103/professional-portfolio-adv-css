@@ -1,36 +1,454 @@
-*{
+:root {
+    --head: aliceblue;
+    --style: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+
+
+* {
     padding: 0;
     margin: 0;
-    position: relative;
     
-}
-main{
-    display: flex;
-    flex-wrap: wrap;
-    width: 400%;
-    height: 100vh;
-}
-header{
-    background-color: rgb(36, 34, 34);
-    height: 100px;
-    position: relative;
-   
     
+
 }
-header h1{
+
+header {
+
+
+    background-image: url(../assets/backgroundimage.jpeg);
+    background-position: center;
+    background-size: cover;
+    min-height: 0;
+    width: 100%;
+    position: relative;
+
+
+}
+
+header nav {
     display: flex;
-    font-size: 38px;
-    padding-bottom: 50px;
-    color: white;
-    margin-left: 10px;
-    align-items: end;
+    padding: 2% 1%;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+main {}
+
+main nav {
+
+
+    background-image: url(../assets/field.avif);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 50vh;
+    position: relative;
+}
+
+nav div {
+
+    justify-content: space-between;
+
+
+}
+
+h1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+    padding-left: 10%;
+    background-color: #13293d;
+    color: #fff;
+
+}
+
+
+
+.navlinks ul li {
+    font-size: 30px;
+    display: inline-block;
+    margin: 20px;
+    position: relative;
+}
+
+.navlinks ul li a {
+
+    color: var(--hea);
+    text-decoration: none;
+
+}
+
+.navlinks {
+
+    display: flex;
+    flex: 1;
+    text-align: right;
+
+}
+
+.navlinks ul li::after {
+    content: '';
+    background: red;
+    width: 100%;
+    height: 6px;
+    display: none;
+
+}
+
+.navlinks ul li:hover::after {
+
+    display: block;
+
+}
+
+article {
+    margin-top: 7%;
+    margin-bottom: 7%;
+    display: flex;
+    max-width: 1200px;
+    margin: 2% auto;
+
+}
+h2{
+    border-right:solid #13293d;
+    border-width: 5px;
+    padding-right: 30px;
+    font-size: 50px;
+    margin-bottom: 7%;
+    margin-top: 7%;
+    padding-left: 6%;
+}
+
+article p {
+
+    font-size: 20px;
+    padding-left: 50px;
+    
+    margin-top: 7%;
+    margin-bottom: 7%;
+    line-height: 2.5;
+    border:solid  black;
+}
+
+
+footer{
+    display: flex;
+    background-color: #13293d;
+    color: #fff;
+}
+
+article ul li   {
+
+    justify-content: space-between;
+    justify-content: right;
+    display: inline;
+    font-size: 30px;
+    margin: 20px;
+    
+
     
 }
 
+article ul li a {
+
+    color: var(--hea);
+    text-decoration: none;
+    
+
+}
+span{
+    font-size: 30px;
+    justify-content: space-between;
+    border-right: solid #fff;
+    padding-right: 15px;
+    justify-content: left;
+
+}
+
+#phone{
+    
+}
+
+article div{
+
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 6%;
+    margin-top: 7%;
+    margin-bottom: 7%;
+
+}
+
+img{
+    
+   border: solid black;
+   padding: 0%;
+   margin: 2%;
+    
+
+}
+
+.projects{
+    width: 80%;
+    text-align: center;
+    border: solid black;
+    
+       
+}
+
+.project1{
+    flex-basis: 90%;
+    border-radius: 10px;
+    border: solid;
+    position: relative;
+    margin-top: 0%;
+    padding-bottom: 200px;
+    
+}
+
+@media(max-width: 992px) {
+
+    .navlinks ul li{
+        
+        font-size:30px;
+    }   
+
+    
+}
+
+@media(max-width: 768px) {
+
+    .navlinks ul li, h1{
+        
+        font-size:12px;
+    }   
+
+    
+}
+
+/* 
+
+header{
+
+    
+    padding-top: 2%;
+    background-image: url("../assets/header-images1.jpeg");
+    font-family: var(--style)
+           
+}
+
+header div{
+    display: flex;
+    justify-content: space-between;
+    color: var(--head);
+    
+    
+    
+}
+header div li{
+
+    font-size: 30px; 
+    display: inline;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+header h1{
+
+    font-size: 45px;
+    background-color: rgb(26, 49, 67);
+    padding:25px;
+    margin-bottom: 10px;
+    text-indent: 25px;
+    
+
+}
+
+h2{
+    margin-top: 4%;
+    margin-bottom: 4%;
+    border-right: solid;
+    font-size: 50px;
+    font-family: var(--style);
+    border-width: 7px;
+    padding-right: 40px;
+    
+
+}
+#aside{
+
+    display: flex;
+    flex-direction: column;
+    padding-right: 40px;
+    
+    
+
+}
+
+.flex-containe{
+
+    display: flex;
+    flex-wrap: wrap;
+
+
+}
+
+#underline{
+    text-decoration-thickness: 7px;
+    color: var(--head);
+    
+    font-size: 30px; 
+    display: inline;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+footer{
+
+    background-image: url(../assets/header-images1.jpeg);
+    margin:0;
+    padding-bottom: 10px;
+    font-family: var(--style);
+    color: var(--head);
+    
+    
+    
+
+    
+}
+
+
+.profile{
+
+    display: flex;
+    background-image: url(../assets/social-media-marketing.jpg);
+    
+    margin-bottom: 15%;
+    
+}
+
+p{
+    text-indent:20px;
+}
+
+img{
+    width: 350px;
+    height: 150px;
+    border:solid;
+    
+    
+}
+
+section{
+    
+    display: flex;
+    flex-wrap: wrap;
+}
+
+img{
+    
+    border-radius: 10px;
+    justify-content: space-between;
+}
+h2 ul{
+    display: flex;
+    display: inline;
+    flex-wrap: row;
+
+}
+footer h2 {
+
+    
+    
+}
+
+footer ul li{
+    font-size: 25px; 
+    display: inline;
+    justify-content: space-around;
+    margin: 35px;
+}
+.row{
+    display: flex;
+    flex-wrap: row;
+    display: inline;
+}
+ */
+
+
+/* header nav{
+    display: flex;
+    justify-content: space-between;
+}
+.flex-container{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.page-section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
+    padding: 10px 0;
+    margin: 20px 0;
+
+}
+.page-section h2{
+    flex:0 0 20%;
+    text-align: left;
+    padding-right: 15px;
+    /* border-right: 4px solid ; */
+
+/* .flex-item{
+
+    display:flex;
+    align-items: flex-end;
+    padding: 0 0 20px 0;
+
+}
+.surf-report{
+
+    background-image: url("../assets/social-media-marketing.jpg");
+
+}
+.flex-item:first-child{
+
+    min-height: 400px;
+    flex-basis: 100%;
+    
+}
+header h1{
+    
+    font-size: 38px;
+    color:rgb(53, 24, 82);
+    margin-left: 10px;
+    background-color: pink;
+    display: inline;
+  
+}
+
+.page-wrapper{
+    max-width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
 header nav li{
+
     font-size: 25px;
     display: inline;
-    line-height: 50px;
+    
     
     
     
@@ -50,15 +468,52 @@ header nav li a{
 .text-right{
 
     text-align: right;
+    align-items: end;
 }
+ .contact{
 
-.profile-pic{
+    display: flex;
+    display: inline;
 
-    background-image: url("./social-media-marketing.jpg)";
 }
-h2{
+    
+main{
+
+    margin-top: 20px;
+    margin-bottom: 45px;
+}
+ */
+*/
+/* h2{
     justify-content: 
-}
-img{
+} */
+/* img{
     
 }
+
+button {
+  width: 250px;
+  margin: 0 .5%;
+  font-size: 200%;
+  color: #13293d;
+  background-color: #fff;
+  border: 3px solid #13293d;
+}
+
+/* The user's cursor is positioned over the element */
+/* button:hover {
+    background-color: #772014;
+    color: #fff;
+  }
+  
+  The user is actively pressing down on the element
+  button:active {
+    font-size: 180%;
+    box-shadow: 0 0 10px #000 inset;
+  }
+  
+  /* The element is currently in focus, either by tabbing to or clicking on it */
+/* button:focus {
+    outline: none;
+    border-color: #8ac4ff;
+  } */
