@@ -2,21 +2,17 @@
     
     --style: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     --backc:  #13293d;
+    --fontc:#fff;
 
 }
 
-* {
+*{
     padding: 0;
     margin: 0;
     background-position: center;
     background-size: cover;
     position: relative;
 
-}
-
-body, html {
-    width: 100%;
-    height: 100%;
 }
 
 
@@ -28,39 +24,104 @@ header {
 
 }
 
-header section {
+.navlinks {
+
+    display: flex;
+    flex: 1;
+    text-align: right;
+    border: solid green;
+    
+
+}
+.navlinks ul li {
+    display: inline-block;
+    margin: 30px;
+    position: relative;
+    border: solid red;
+    
+}
+
+
+.navlinks ul li a {
+
+    color: var(--hea);
+    text-decoration: none;
+    color: var(--fontc);
+    padding: 1%;
+    font-size: 30px;
+    
+    /* align-items: center; */
+    
+
+}
+
+h1 {
+    padding: 1%;
+    padding-left: 4%;
+    background-color:var(--backc);
+    color: var(--fontc);
+    font-size: 45px;
+    border: 5px solid var(--fontc);
+
+}
+
+/* header section {
 
     display: flex;
     padding-bottom: 1%;
     padding-top: 1%;
     justify-content: space-between;
 
-}
+} */
 
 main nav {
 
 
-    background-image: url(../assets/field.avif);
+    background-image: url(../assets/elephants.jpeg);
     background-position: center;
     background-size: cover;
     width: 100%;
-    height: 40vh;
+    height: 60vh;
     position: relative;
-    border: solid red;
+    border: solid blue;
+        
+}
+img{
     
-    
+    border-radius: 100%;
+    height: 300px;
+    width: 250px;
+    right:1000px;
+    bottom: 70px;
+    position: absolute;
+    border: 5px solid var(--fontc);
+   
 }
 .sub{
-    display: flex;
+   
     
     display: inline;
     border: solid yellow;
-    font-size: 50px;
     width: 100%;
-    color: #fff;
     padding-right: 30px;
     margin-bottom: 2%;
     
+}
+.sub p{
+    
+    padding-right: 40px;
+    padding-left: 5%;
+    background-color: var(--backc);
+    margin-bottom: 5%;
+    margin-right: 2%;
+    display: inline;
+    font-size: 45px;
+    color: var(--fontc);
+    border: 5px solid var(--fontc);
+    
+
+    
+
 }
 .dropsub{
     display: flex;
@@ -71,16 +132,34 @@ main nav {
     
     
 }
-.sub p{
+.spacebetween{
     
-    padding-right: 40px;
-    padding-left: 5%;
-    background-color:var(--backc);
-    margin-bottom: 5%;
-    margin-right: 2%;
-    display: inline;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-right: 7%;
     
+}
+h2{
+    border-right:solid var(--backc);
+    border-width: 5px;
+    padding-right: 30px;
+    font-size: 50px;
+    padding-left: 6%;
+    color: var(--backc);
+    text-align: right;
+}
 
+article p {
+
+    font-size: 15px;
+    padding-left: 50px;
+    
+    /* margin-top: 7%;
+    margin-bottom: 7%; */
+    line-height: 2.5;
+    border: solid blue;
+   
+    
 }
 nav div {
 
@@ -90,52 +169,14 @@ nav div {
 
 }
 
-h1 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1%;
-    padding-left: 4%;
-    background-color:var(--backc);
-    color: #fff;
-    font-size: 45px;
-    border: solid red;
-
-}
 
 
 
-.navlinks ul li {
-    font-size: 30px;
-    display: inline-block;
-    margin: 30px;
-    position: relative;
-    border: solid red;
-    
-}
 
-.navlinks ul li a {
 
-    color: var(--hea);
-    text-decoration: none;
-    border-radius: 12%;
-    color: #fff;
-    padding: 1%;
-    
-    align-items: center;
-    
 
-}
 
-.navlinks {
 
-    display: flex;
-    flex: 1;
-    text-align: right;
-    border: solid red;
-    
-
-}
 
 .navlinks ul li::after {
     content: '';
@@ -151,18 +192,13 @@ h1 {
 .navlinks ul li:hover::after {
 
     display: block;
-    background-color: #94bde3;
+    background-color: var(--fontc);
     cursor:pointer;
 
 
 }
 
-.spacebetween{
 
-    margin-top: 10%;
-    margin-bottom: 10%;
-    margin-right: 7%;
-}
 article {
     /* margin-top: 7%;
     margin-bottom: 7%; */
@@ -173,43 +209,13 @@ article {
     
 
 }
-h2{
-    border-right:solid var(--backc);
-    border-width: 5px;
-    padding-right: 30px;
-    font-size: 60px;
-    /* margin-bottom: 7%;
-    margin-top: 7%; */
-    padding-left: 6%;
-    color: var(--backc);
-    text-align: right;
-}
 
-article p {
-
-    font-size: 15px;
-    padding-left: 50px;
-    
-    /* margin-top: 7%;
-    margin-bottom: 7%; */
-    line-height: 2.5;
-    border: solid red;
-   
-    
-}
 
 
 footer{
-    display: flex;
-    background-color:var(--backc);
-    color: #fff;
-    border: solid yellow;
-    width: 100%;
-    position: relative;
     
 }
-
-article section{
+section{
 
     display: flex;
     justify-content: space-between;
@@ -220,6 +226,7 @@ article section{
 section ul{
 
     justify-content: space-between;
+    text-align: right;
     
 
 }
@@ -233,7 +240,7 @@ section ul li{
     margin: 20px;
 }
 
-article ul li a {
+section ul li a {
 
     color: var(--hea);
     display: flex;
@@ -246,7 +253,7 @@ article ul li a {
 ul span{
     font-size: 30px;
     justify-content: space-between;
-    border-right: solid #fff;
+    border-right: solid var(--fontc);
     padding-right: 15px;
     justify-content: left;
     border: solid red;
@@ -262,33 +269,31 @@ article div{
     /* margin-top: 7%;
     margin-bottom: 7%; */
     border: solid green;
-    
-    
+        
 
 }
 
+#container{
 
-
-img{
-    
-   border: solid var(--backc);
-   border-width: 15px;
-   height: 100%;
-   width: 100%;
-   object-fit: cover;
-   width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 50px;
 
 }
 
-/* .projects{
+.projects{
    
-   
+    display: flex;
+    flex-direction: row;
     border: solid green;
-    width: 50%;
     position: relative;
+    min-width: 40%;
+    
+    
     
        
-} */
+}
+
 
 #project1{
     
@@ -299,6 +304,7 @@ img{
     text-align: center;
     padding-left: 50px;
     margin-bottom: 50px;
+    background-image: url(../assets/tree-in-safari-africa-n5r0k29p4p6ebdtm.jpg);
     
 }
 #project2{
@@ -306,10 +312,11 @@ img{
     padding-left: 50px;
     border-radius: 10px;
     position: relative;
-    width: 50%;
-    height: 120px;
+    max-width: 30%;
+    height: 170px;
     text-align: center;
     margin-bottom: 40px;
+    background-image: url(../assets/herd-elephants-distance-near-shore-reservoir-sunset-evening-sun-3d-illustration_76964-3696.avif);
    
 }
 #project1 img {
@@ -331,11 +338,12 @@ img{
     margin-left: 30px;
     line-height: 1.5;
     background-color:var(--backc);
-    color: #fff;
-    border:solid #fff;
+    color: var(--fontc);
+    border:solid var(--fontc);
     border-width: 5px;
     padding-left: 15px;
     padding-right: 15px;
+    height: 0;
     
      
 }
@@ -346,8 +354,8 @@ img{
     margin-left: 30px;
     line-height: 1.5;
     background-color:var(--backc);
-    color: #fff;
-    border:solid #fff;
+    color: var(--fontc);
+    border:solid var(--fontc);
     border-width: 5px;
     padding-left: 15px;
     padding-right: 15px;
