@@ -1,42 +1,41 @@
 :root {
-    --head: aliceblue;
+    
     --style: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --backc:  #13293d;
 
 }
-
-
 
 * {
     padding: 0;
     margin: 0;
-    
-    
+    background-position: center;
+    background-size: cover;
+    position: relative;
 
 }
+
+body, html {
+    width: 100%;
+    height: 100%;
+}
+
 
 header {
 
-
     background-image: url(../assets/backgroundimage.jpeg);
-    background-position: center;
-    background-size: cover;
-    min-height: 0;
     width: 100%;
-    position: relative;
-
+    border: solid red ;
 
 }
 
-header nav {
+header section {
+
     display: flex;
-    padding: 2% 1%;
+    padding-bottom: 1%;
+    padding-top: 1%;
     justify-content: space-between;
-    align-items: center;
-
 
 }
-
-main {}
 
 main nav {
 
@@ -45,13 +44,48 @@ main nav {
     background-position: center;
     background-size: cover;
     width: 100%;
-    height: 50vh;
+    height: 40vh;
     position: relative;
+    border: solid red;
+    
+    
 }
+.sub{
+    display: flex;
+    
+    display: inline;
+    border: solid yellow;
+    font-size: 50px;
+    width: 100%;
+    color: #fff;
+    padding-right: 30px;
+    margin-bottom: 2%;
+    
+}
+.dropsub{
+    display: flex;
+    align-items: end;
+    text-align: right;
+    
+    
+    
+    
+}
+.sub p{
+    
+    padding-right: 40px;
+    padding-left: 5%;
+    background-color:var(--backc);
+    margin-bottom: 5%;
+    margin-right: 2%;
+    display: inline;
+    
 
+}
 nav div {
 
     justify-content: space-between;
+    margin-bottom: 0%
 
 
 }
@@ -61,9 +95,11 @@ h1 {
     justify-content: space-between;
     align-items: center;
     padding: 1%;
-    padding-left: 10%;
-    background-color: #13293d;
+    padding-left: 4%;
+    background-color:var(--backc);
     color: #fff;
+    font-size: 45px;
+    border: solid red;
 
 }
 
@@ -72,14 +108,22 @@ h1 {
 .navlinks ul li {
     font-size: 30px;
     display: inline-block;
-    margin: 20px;
+    margin: 30px;
     position: relative;
+    border: solid red;
+    
 }
 
 .navlinks ul li a {
 
     color: var(--hea);
     text-decoration: none;
+    border-radius: 12%;
+    color: #fff;
+    padding: 1%;
+    
+    align-items: center;
+    
 
 }
 
@@ -88,127 +132,225 @@ h1 {
     display: flex;
     flex: 1;
     text-align: right;
+    border: solid red;
+    
 
 }
 
 .navlinks ul li::after {
     content: '';
-    background: red;
+    background:var(--backc);
     width: 100%;
-    height: 6px;
-    display: none;
+    height: 8px;
+    display:block;
+    margin-top: 3%;
+    
 
 }
 
 .navlinks ul li:hover::after {
 
     display: block;
+    background-color: #94bde3;
+    cursor:pointer;
+
 
 }
 
+.spacebetween{
+
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-right: 7%;
+}
 article {
-    margin-top: 7%;
-    margin-bottom: 7%;
+    /* margin-top: 7%;
+    margin-bottom: 7%; */
     display: flex;
-    max-width: 1200px;
-    margin: 2% auto;
+    /* max-width: 1200px; */
+    
+    border: solid red;
+    
 
 }
 h2{
-    border-right:solid #13293d;
+    border-right:solid var(--backc);
     border-width: 5px;
     padding-right: 30px;
-    font-size: 50px;
-    margin-bottom: 7%;
-    margin-top: 7%;
+    font-size: 60px;
+    /* margin-bottom: 7%;
+    margin-top: 7%; */
     padding-left: 6%;
+    color: var(--backc);
+    text-align: right;
 }
 
 article p {
 
-    font-size: 20px;
+    font-size: 15px;
     padding-left: 50px;
     
-    margin-top: 7%;
-    margin-bottom: 7%;
+    /* margin-top: 7%;
+    margin-bottom: 7%; */
     line-height: 2.5;
-    border:solid  black;
+    border: solid red;
+   
+    
 }
 
 
 footer{
     display: flex;
-    background-color: #13293d;
+    background-color:var(--backc);
     color: #fff;
+    border: solid yellow;
+    width: 100%;
+    position: relative;
+    
 }
 
-article ul li   {
+article section{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+   
+}
+section ul{
+
+    justify-content: space-between;
+    
+
+}
+
+section ul li{
 
     justify-content: space-between;
     justify-content: right;
     display: inline;
     font-size: 30px;
     margin: 20px;
-    
-
-    
 }
 
 article ul li a {
 
     color: var(--hea);
-    text-decoration: none;
+    display: flex;
+    justify-content:space-evenly;
+    display: inline;
+    margin: 10px;
     
 
 }
-span{
+ul span{
     font-size: 30px;
     justify-content: space-between;
     border-right: solid #fff;
     padding-right: 15px;
     justify-content: left;
-
-}
-
-#phone{
+    border: solid red;
     
+
 }
 
 article div{
 
     display: flex;
     flex-wrap: wrap;
-    padding-left: 6%;
-    margin-top: 7%;
-    margin-bottom: 7%;
+    /* padding-left: 6%; */
+    /* margin-top: 7%;
+    margin-bottom: 7%; */
+    border: solid green;
+    
+    
 
 }
+
+
 
 img{
     
-   border: solid black;
-   padding: 0%;
-   margin: 2%;
-    
+   border: solid var(--backc);
+   border-width: 15px;
+   height: 100%;
+   width: 100%;
+   object-fit: cover;
+   width: 100%;
 
 }
 
-.projects{
-    width: 80%;
-    text-align: center;
-    border: solid black;
+/* .projects{
+   
+   
+    border: solid green;
+    width: 50%;
+    position: relative;
     
        
-}
+} */
 
-.project1{
-    flex-basis: 90%;
-    border-radius: 10px;
-    border: solid;
-    position: relative;
-    margin-top: 0%;
-    padding-bottom: 200px;
+#project1{
     
+    border-radius: 10px;
+    position: relative;
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    padding-left: 50px;
+    margin-bottom: 50px;
+    
+}
+#project2{
+
+    padding-left: 50px;
+    border-radius: 10px;
+    position: relative;
+    width: 50%;
+    height: 120px;
+    text-align: center;
+    margin-bottom: 40px;
+   
+}
+#project1 img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#project2 img{
+
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#pjct1{
+
+    font-size: 50px;
+    position: relative;
+    bottom:120px;
+    margin-left: 30px;
+    line-height: 1.5;
+    background-color:var(--backc);
+    color: #fff;
+    border:solid #fff;
+    border-width: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    
+     
+}
+#pjct2{
+    font-size: 35px;
+    position: relative;
+    bottom:120px;
+    margin-left: 30px;
+    line-height: 1.5;
+    background-color:var(--backc);
+    color: #fff;
+    border:solid #fff;
+    border-width: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 @media(max-width: 992px) {
