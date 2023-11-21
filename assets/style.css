@@ -1,12 +1,13 @@
 :root {
-    
+    /*setting variables for font color and style*/
     --style: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    --backc:  #13293d;
-    --fontc:#fff;
+    --backc: #17334d;
+    --fontc: #fff;
 
 }
 
-*{
+/*Universal selector section to apply to the entire page*/
+* {
     padding: 0;
     margin: 0;
     background-position: center;
@@ -18,27 +19,28 @@
 
 header {
 
-    background-image: url(../assets/backgroundimage.jpeg);
+    background-image: url(../assets/plainblue.jpeg);
     width: 100%;
-    border: solid red ;
 
 }
 
+/*navigation section */
 .navlinks {
 
     display: flex;
     flex: 1;
     text-align: right;
-    border: solid green;
-    
+    justify-content: space-between;
+
 
 }
+
 .navlinks ul li {
     display: inline-block;
     margin: 30px;
     position: relative;
-    border: solid red;
-    
+
+
 }
 
 
@@ -49,66 +51,80 @@ header {
     color: var(--fontc);
     padding: 1%;
     font-size: 30px;
-    
-    /* align-items: center; */
-    
+
+
+}
+
+.navlinks ul li::after {
+    content: '';
+    background: var(--backc);
+    width: 100%;
+    height: 8px;
+    display: block;
+    margin-top: 3%;
+
+
+}
+
+.navlinks ul li:hover::after {
+
+    display: block;
+    background-color: var(--fontc);
+    cursor: pointer;
+
 
 }
 
 h1 {
     padding: 1%;
     padding-left: 4%;
-    background-color:var(--backc);
-    color: var(--fontc);
+    background-color: var(--fontc);
+    color: var(--backc);
     font-size: 45px;
     border: 5px solid var(--fontc);
+    margin: 2% 0 2% 0;
+
 
 }
 
-/* header section {
-
-    display: flex;
-    padding-bottom: 1%;
-    padding-top: 1%;
-    justify-content: space-between;
-
-} */
-
 main nav {
 
-
+/* 
     background-image: url(../assets/elephants.jpeg);
     background-position: center;
     background-size: cover;
     width: 100%;
     height: 60vh;
     position: relative;
-    border: solid blue;
-        
+    border: solid blue; */
+
 }
-img{
-    
+
+img {
+
     border-radius: 100%;
-    height: 300px;
-    width: 250px;
-    right:1000px;
-    bottom: 70px;
-    position: absolute;
-    border: 5px solid var(--fontc);
-   
-}
-.sub{
-   
+    height: 200px;
+    width: 170px;
+    display: flex;
+    position: relative;
+    border: 8px solid var(--fontc);
+    bottom: 40px;
     
+
+}
+
+.sub {
+
+
     display: inline;
-    border: solid yellow;
     width: 100%;
     padding-right: 30px;
     margin-bottom: 2%;
-    
+
 }
-.sub p{
-    
+
+.sub p {
+
     padding-right: 40px;
     padding-left: 5%;
     background-color: var(--backc);
@@ -118,29 +134,41 @@ img{
     font-size: 45px;
     color: var(--fontc);
     border: 5px solid var(--fontc);
-    
 
-    
+
+
 
 }
-.dropsub{
+
+.dropsub {
     display: flex;
     align-items: end;
     text-align: right;
+    background-image: url(../assets/birdflying.jpeg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 60vh;
+    position: relative;
     
-    
-    
-    
+
+
+
+
 }
-.spacebetween{
-    
+
+.spacebetween {
+
     margin-top: 10%;
     margin-bottom: 10%;
     margin-right: 7%;
-    
+    display: flex;
+   
+
 }
-h2{
-    border-right:solid var(--backc);
+
+h2 {
+    border-right: solid var(--backc);
     border-width: 5px;
     padding-right: 30px;
     font-size: 50px;
@@ -151,165 +179,133 @@ h2{
 
 article p {
 
-    font-size: 15px;
+    font-size: 17px;
+    line-height: 2;
+    flex-direction: wrap;
     padding-left: 50px;
+}
+
+
+
+.footerlinks {
+
     
-    /* margin-top: 7%;
-    margin-bottom: 7%; */
-    line-height: 2.5;
-    border: solid blue;
+    display: flex;
+    text-align: right;
+    justify-content: space-between;
+    
    
     
 }
-nav div {
 
-    justify-content: space-between;
-    margin-bottom: 0%
-
-
+.footerlinks ul li {
+    display: inline-block;
+    margin: 30px;
+    position: relative;
+   
+   
+    
+    
 }
 
 
+.footerlinks ul li a {
+    
 
+    color: var(--backc);
+    padding: 1%;
+    font-size: 20px;
+    text-decoration: none;
+    display: inline-flex;
+    
 
+}
 
-
-
-
-
-
-.navlinks ul li::after {
+.footerlinks ul li::after {
     content: '';
-    background:var(--backc);
+    background: var(--backc);
     width: 100%;
     height: 8px;
-    display:block;
+    display: block;
     margin-top: 3%;
-    
+
 
 }
-
-.navlinks ul li:hover::after {
+.footerlinks ul li:hover::after {
 
     display: block;
-    background-color: var(--fontc);
-    cursor:pointer;
-
-
-}
-
-
-article {
-    /* margin-top: 7%;
-    margin-bottom: 7%; */
-    display: flex;
-    /* max-width: 1200px; */
-    
-    border: solid red;
+    background-color:#52abff ;
+    cursor: pointer;
     
 
 }
 
 
+.footerh2{
 
-footer{
+    border-right: solid var(--backc);
+    border-width: 5px;
     
-}
-section{
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
-   
-}
-section ul{
-
-    justify-content: space-between;
+    font-size: 50px;
+    padding-left: 6%;
+    margin: 0;
+    color: var(--backc);
     text-align: right;
     
-
 }
 
-section ul li{
 
-    justify-content: space-between;
-    justify-content: right;
-    display: inline;
-    font-size: 30px;
-    margin: 20px;
-}
 
-section ul li a {
-
-    color: var(--hea);
-    display: flex;
-    justify-content:space-evenly;
-    display: inline;
-    margin: 10px;
-    
-
-}
-ul span{
-    font-size: 30px;
-    justify-content: space-between;
-    border-right: solid var(--fontc);
-    padding-right: 15px;
-    justify-content: left;
-    border: solid red;
-    
-
-}
-
-article div{
-
+.container {
     display: flex;
     flex-wrap: wrap;
-    /* padding-left: 6%; */
-    /* margin-top: 7%;
-    margin-bottom: 7%; */
-    border: solid green;
-        
-
-}
-
-#container{
-
     display: flex;
     justify-content: space-between;
-    padding-left: 50px;
+    padding-left:50px;
+    width: 100%;
 
 }
 
-.projects{
-   
+.miniCon {
+
     display: flex;
     flex-direction: row;
-    border: solid green;
     position: relative;
-    min-width: 40%;
+    min-width: 47%;
+    justify-content: start;
+    align-items: end;
+    border: 7px solid var(--backc);
+
+}
+
+.miniCon p {
+
+    background-color: var(--backc);
+    display: inline;
+    font-size: 30px;
+    color: var(--fontc);
+    border: 3px solid var(--fontc);
+    height: 60px;
+    padding:0 7% 0 3%;
+    margin: 0 0 3% 0%;
     
-    
-    
-       
 }
 
 
-#project1{
-    
+#project1 {
+
     border-radius: 10px;
     position: relative;
     width: 100%;
     height: 500px;
     text-align: center;
-    padding-left: 50px;
     margin-bottom: 50px;
     background-image: url(../assets/tree-in-safari-africa-n5r0k29p4p6ebdtm.jpg);
-    
-}
-#project2{
 
-    padding-left: 50px;
+}
+
+#project2 {
+
     border-radius: 10px;
     position: relative;
     max-width: 30%;
@@ -317,353 +313,103 @@ article div{
     text-align: center;
     margin-bottom: 40px;
     background-image: url(../assets/herd-elephants-distance-near-shore-reservoir-sunset-evening-sun-3d-illustration_76964-3696.avif);
-   
+
 }
+
+#project3 {
+
+
+    border-radius: 10px;
+    position: relative;
+    max-width: 30%;
+    height: 170px;
+    text-align: center;
+    margin-bottom: 40px;
+    background-image: url(../assets/africa-e.jpeg);
+}
+
+#project4 {
+
+    border-radius: 10px;
+    position: relative;
+    max-width: 30%;
+    height: 170px;
+    text-align: center;
+    margin-bottom: 40px;
+    background-image: url(../assets/elephants.jpeg);
+}
+
+#project5 {
+
+    border-radius: 10px;
+    position: relative;
+    max-width: 30%;
+    height: 170px;
+    text-align: center;
+    margin-bottom: 40px;
+    background-image: url(../assets/backgroundimage.jpeg);
+}
+/* 
+.navlinks ul li::after {
+    content: '';
+    background: var(--backc);
+    width: 100%;
+    height: 8px;
+    display: block;
+    margin-top: 3%;
+
+
+}
+
+.navlinks ul li:hover::after {
+
+    display: block;
+    background-color: var(--fontc);
+    cursor: pointer;
+
+
+} */
+
+
+.miniCon:hover{
+
+    opacity: 0.5;
+    cursor: pointer;
+    
+
+}
+
 #project1 img {
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
-#project2 img{
+
+#project2 img {
 
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
-#pjct1{
 
-    font-size: 50px;
-    position: relative;
-    bottom:120px;
-    margin-left: 30px;
-    line-height: 1.5;
-    background-color:var(--backc);
-    color: var(--fontc);
-    border:solid var(--fontc);
-    border-width: 5px;
-    padding-left: 15px;
-    padding-right: 15px;
-    height: 0;
-    
-     
-}
-#pjct2{
-    font-size: 35px;
-    position: relative;
-    bottom:120px;
-    margin-left: 30px;
-    line-height: 1.5;
-    background-color:var(--backc);
-    color: var(--fontc);
-    border:solid var(--fontc);
-    border-width: 5px;
-    padding-left: 15px;
-    padding-right: 15px;
-}
+ @media(max-width: 992px) {
 
-@media(max-width: 992px) {
+    .navlinks ul li {
 
-    .navlinks ul li{
-        
-        font-size:30px;
-    }   
+        font-size: 30px;
+    }
 
-    
+
 }
 
 @media(max-width: 768px) {
 
-    .navlinks ul li, h1{
-        
-        font-size:12px;
-    }   
+    .navlinks ul li,
+    header {
 
-    
-}
-
-/* 
-
-header{
-
-    
-    padding-top: 2%;
-    background-image: url("../assets/header-images1.jpeg");
-    font-family: var(--style)
-           
-}
-
-header div{
-    display: flex;
-    justify-content: space-between;
-    color: var(--head);
-    
-    
-    
-}
-header div li{
-
-    font-size: 30px; 
-    display: inline;
-    justify-content: space-around;
-    margin: 20px;
-}
-
-header h1{
-
-    font-size: 45px;
-    background-color: rgb(26, 49, 67);
-    padding:25px;
-    margin-bottom: 10px;
-    text-indent: 25px;
-    
-
-}
-
-h2{
-    margin-top: 4%;
-    margin-bottom: 4%;
-    border-right: solid;
-    font-size: 50px;
-    font-family: var(--style);
-    border-width: 7px;
-    padding-right: 40px;
-    
-
-}
-#aside{
-
-    display: flex;
-    flex-direction: column;
-    padding-right: 40px;
-    
-    
-
-}
-
-.flex-containe{
-
-    display: flex;
-    flex-wrap: wrap;
+        font-size: 12px;
+    }
 
 
 }
 
-#underline{
-    text-decoration-thickness: 7px;
-    color: var(--head);
-    
-    font-size: 30px; 
-    display: inline;
-    justify-content: space-around;
-    margin: 20px;
-}
-
-footer{
-
-    background-image: url(../assets/header-images1.jpeg);
-    margin:0;
-    padding-bottom: 10px;
-    font-family: var(--style);
-    color: var(--head);
-    
-    
-    
-
-    
-}
-
-
-.profile{
-
-    display: flex;
-    background-image: url(../assets/social-media-marketing.jpg);
-    
-    margin-bottom: 15%;
-    
-}
-
-p{
-    text-indent:20px;
-}
-
-img{
-    width: 350px;
-    height: 150px;
-    border:solid;
-    
-    
-}
-
-section{
-    
-    display: flex;
-    flex-wrap: wrap;
-}
-
-img{
-    
-    border-radius: 10px;
-    justify-content: space-between;
-}
-h2 ul{
-    display: flex;
-    display: inline;
-    flex-wrap: row;
-
-}
-footer h2 {
-
-    
-    
-}
-
-footer ul li{
-    font-size: 25px; 
-    display: inline;
-    justify-content: space-around;
-    margin: 35px;
-}
-.row{
-    display: flex;
-    flex-wrap: row;
-    display: inline;
-}
- */
-
-
-/* header nav{
-    display: flex;
-    justify-content: space-between;
-}
-.flex-container{
-
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    
-}
-.page-section{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: stretch;
-    justify-content: space-between;
-    padding: 10px 0;
-    margin: 20px 0;
-
-}
-.page-section h2{
-    flex:0 0 20%;
-    text-align: left;
-    padding-right: 15px;
-    /* border-right: 4px solid ; */
-
-/* .flex-item{
-
-    display:flex;
-    align-items: flex-end;
-    padding: 0 0 20px 0;
-
-}
-.surf-report{
-
-    background-image: url("../assets/social-media-marketing.jpg");
-
-}
-.flex-item:first-child{
-
-    min-height: 400px;
-    flex-basis: 100%;
-    
-}
-header h1{
-    
-    font-size: 38px;
-    color:rgb(53, 24, 82);
-    margin-left: 10px;
-    background-color: pink;
-    display: inline;
-  
-}
-
-.page-wrapper{
-    max-width: 85%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-
-
-header nav li{
-
-    font-size: 25px;
-    display: inline;
-    
-    
-    
-    
-
-}
-header nav li a{
-    color:white;
-    text-decoration-thickness: 5px;
-    justify-content: space-around;
-    margin-left: 25px;
-    margin-right: 15px;
-
-    
-}
-
-
-.text-right{
-
-    text-align: right;
-    align-items: end;
-}
- .contact{
-
-    display: flex;
-    display: inline;
-
-}
-    
-main{
-
-    margin-top: 20px;
-    margin-bottom: 45px;
-}
- */
-*/
-/* h2{
-    justify-content: 
-} */
-/* img{
-    
-}
-
-button {
-  width: 250px;
-  margin: 0 .5%;
-  font-size: 200%;
-  color: #13293d;
-  background-color: #fff;
-  border: 3px solid #13293d;
-}
-
-/* The user's cursor is positioned over the element */
-/* button:hover {
-    background-color: #772014;
-    color: #fff;
-  }
-  
-  The user is actively pressing down on the element
-  button:active {
-    font-size: 180%;
-    box-shadow: 0 0 10px #000 inset;
-  }
-  
-  /* The element is currently in focus, either by tabbing to or clicking on it */
-/* button:focus {
-    outline: none;
-    border-color: #8ac4ff;
-  } */
