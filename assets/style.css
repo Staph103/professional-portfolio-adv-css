@@ -67,6 +67,7 @@ header {
 
 }
 
+/*When cursor hovers over navlinks section cursor changes and so does the color under the text*/
 .navlinks ul li:hover::after {
 
     display: block;
@@ -128,6 +129,7 @@ img {
 
 }
 
+/*pulls background image from css to html*/
 .dropsub {
     display: flex;
     align-items: end;
@@ -145,6 +147,7 @@ img {
 
 }
 
+/*The spaces between each section of the page*/
 .spacebetween {
 
     margin-top: 10%;
@@ -156,6 +159,7 @@ img {
 
 }
 
+/*sets the parameters for the about me, work and contact me heading style*/
 h2 {
     border-right: solid var(--backc);
     border-width: 5px;
@@ -186,6 +190,7 @@ article p {
 
 }
 
+/*the bottom four images in the work section this organizes the style*/
 .miniCon {
 
     display: flex;
@@ -196,6 +201,7 @@ article p {
     align-items: end;
     border: 7px solid var(--backc);
     box-shadow: 0 25px 35px var(--hoverc);
+    margin: 0 auto;
 }
 
 
@@ -212,14 +218,18 @@ article p {
 
 }
 
+/*when cursor hovers over this section the images get bigger and also fades by 0.5*/
 .miniCon:hover {
 
-    opacity: 0.5;
+    opacity: 0.8;
     cursor: pointer;
+    transform: scale(1.1);
+
 
 
 }
 
+/*This section pulls the background images fron the css to the html for all projects*/
 #project1 {
 
     border-radius: 10px;
@@ -293,33 +303,6 @@ article p {
 
 
 
-
-
-@media screen and (max-width: 992px) {
-
-    main {
-
-        font-size: 30px;
-        flex-direction: column;
-        align-items: end;
-        justify-content: space-evenly;
-    }
-
-}
-
-
-@media screen and (max-width: 992px) {
-
-    h2 {
-        min-width: 20%;
-        font-size: 50px;
-        flex-direction: column;
-        align-items: end;
-        justify-content: space-evenly;
-    }
-
-}
-
 .footerlinks {
 
 
@@ -332,7 +315,7 @@ article p {
 
 }
 
-#footerh2 {
+#contact {
 
     display: flex;
     justify-content: space-between;
@@ -364,6 +347,9 @@ article p {
     justify-content: start;
     margin-RIGHT: 20PX
 }
+
+
+/*displays information and style when hovered over*/
 
 .footerlinks ul li::after {
     content: '';
@@ -424,6 +410,7 @@ article p {
     display: block;
 }
 
+/*This section changes the sizing of section depending on the screen width*/
 
 @media screen and (max-width: 992px) {
 
@@ -443,6 +430,31 @@ article p {
         align-items: end;
         justify-content: space-evenly;
 
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+
+    main {
+
+        font-size: 30px;
+        flex-direction: column;
+        align-items: end;
+        justify-content: space-evenly;
+    }
+
+}
+
+
+@media screen and (max-width: 992px) {
+
+    h2 {
+        min-width: 20%;
+        font-size: 50px;
+        flex-direction: column;
+        align-items: end;
+        justify-content: space-evenly;
     }
 
 }

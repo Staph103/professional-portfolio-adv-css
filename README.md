@@ -7,6 +7,19 @@ I WANT to view a potential employee's deployed portfolio of work samples
 
 SO THAT I can review samples of their work and assess whether they're a good candidate for an open position
 
+
+## Deployement Link
+
+
+
+
+## Purpose
+
+
+To display a webpage that offers users information about me, how to contact me, a list of my work and links to navigate to other sites.
+
+
+
 ## Acceptance Criteria 
 
 
@@ -41,20 +54,21 @@ THEN I am presented with a responsive layout that adapts to my viewport
 The following images demonstrates the web application's appearance and functionality:
 
 
+![screenshot](./assets/Challenge2screenshot.png)
+
 
 ## Description
 
 
-I first created the layout of the HTML the framework
+* Created the layout of the HTML the framework
 
-I then created variables for the fontstyle and color of the page
+* Created variables for the fontstyle and color of the page
 
-I worked on my spacing and created flexbox and flex wrapping 
+* Worked on my spacing and created flexbox and flex wrapping
 
-I then conneted background images from my CSS to HTML
+* Added hover affects to my navigation links, pages images, and footer
 
-I then worked on my page wrapping, padding and margins
+* Used HTML, CSS, and JavaScript
 
-I then added hover affects to my navigation links, pages images, and footer
 
 
