@@ -10,13 +10,14 @@ SO THAT I can review samples of their work and assess whether they're a good can
 
 ## Deployement Link
 
+https://staph103.github.io/professional-portfolio-adv-css/
 
 
 
 ## Purpose
 
 
-To display a webpage that offers users information about me, how to contact me, a list of my work and links to navigate to other sites.
+To display a webpage that offers users samples of my work, information about me, how to contact me, a list of my work and links to navigate to other sites.
 
 
 
@@ -48,6 +49,7 @@ THEN I am taken to that deployed application
 WHEN I resize the page or view the site on various screens and devices
 
 THEN I am presented with a responsive layout that adapts to my viewport
+
 
 ## Assets
 
